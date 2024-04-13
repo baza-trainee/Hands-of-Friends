@@ -1,14 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'backend.rd.org.ua',
-        port: '',
-        pathname: '/media/**',
-      },
-    ],
+    domains: ['backend.rd.org.ua'],
   },
   webpack: (config) => {
     config.module.rules.push({
