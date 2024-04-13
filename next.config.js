@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['backend.rd.org.ua'],
-    deviceSizes: [640, 768, 1024, 1280, 1600, 3840],  // Include the requested size
-    imageSizes: [16, 32, 48, 64, 96, 256, 512],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'backend.rd.org.ua',
+        port: '',
+        pathname: '/media/**',
+      },
+    ],
   },
   webpack: (config) => {
     config.module.rules.push({
