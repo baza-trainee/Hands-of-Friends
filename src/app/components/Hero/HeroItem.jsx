@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HeroItem({ data }) {
   return (
     <>
-      <div className="bg-[#E0F2FE]">
+      <div className="bg-[#E0F2FE] custom-bg-shadow">
         <Image
           src={data.image}
           alt={`${data.image}`}

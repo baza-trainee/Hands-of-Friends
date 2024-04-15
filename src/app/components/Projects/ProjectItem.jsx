@@ -24,13 +24,13 @@ export default function ProjectItem({ data, lng }) {
 
 	return (
 		<li key={data.id}>
-			<div className='p-4 border border-solid border-1 border-[#D1D5DB]'>
+			<div className='p-4 border border-solid border-1 border-[#D1D5DB] custom-bg-shadow'>
 				<Image
 					src={data.image}
 					alt='Photo of the project'
 					width={280}
 					height={400}
-					className='min-w-full h-[320px] object-cover
+					className='min-w-full h-[320px] object-cover 
 					sm:min-w-full sm:h-[430px]
 					md:min-w-full md:h-[371px]
 					xl:min-w-full xl:h-[361.21px]
@@ -62,10 +62,7 @@ export default function ProjectItem({ data, lng }) {
 					onClick={() => router.push(`/${lang}/projects/${data.id}`)}
 					type='button'
 					className='block w-[198px] min-h-[60px] mx-auto rounded-md underline underline-offset-4 px-0 mt-4 
-
 					font-normal bg-transparent text-black text-xl border border-transparent hover:border hover:border-deepBlue hover:bg-lightBlue 
-
-			
 					md:mt-8 md:text-2xl md:min-h-[64px] 
 					xl:mt-4 
 					2xl:mt-8 2xl:text-xl 2xl:min-h-[60px]'

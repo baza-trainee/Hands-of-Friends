@@ -9,7 +9,7 @@ import { useTranslation } from "@/app/i18n/client";
 export const PaymentBody = ({ lng }) => {
   const { t } = useTranslation(lng, "payment");
   const [isCopied, setIsCopied] = useState(false);
-  const iban = "UA000000000000000000000000";
+  const iban = "UA393355480000026009053637832";
   const ref = useRef(null);
 
   const copyToClipboard = async (e) => {

@@ -36,6 +36,7 @@
     "react-player": "^2.14.1",
     "react-use": "^17.5.0",
     "redux": "^5.0.1",
+    "sharp": "^0.33.3",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.2.1",
     "video-react": "^0.16.0",
