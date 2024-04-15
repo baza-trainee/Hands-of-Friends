@@ -24,13 +24,13 @@ export default function ProjectItem({ data, lng }) {
 
 	return (
 		<li key={data.id}>
-			<div className='p-4 border border-solid border-1 border-[#D1D5DB] custom-bg-shadow'>
+			<div className='p-4 border border-solid border-1 border-[#D1D5DB]'>
 				<Image
 					src={data.image}
 					alt='Photo of the project'
 					width={280}
 					height={400}
-					className='min-w-full h-[320px] object-cover 
+					className='min-w-full h-[320px] object-cover
 					sm:min-w-full sm:h-[430px]
 					md:min-w-full md:h-[371px]
 					xl:min-w-full xl:h-[361.21px]

@@ -25,39 +25,12 @@ const UniversalSlider = ({
   const [prevData, setPrevData] = useState();
   const [isLoading, setIsLoaing] = useState(true);
 
-  let showNavigation;
-  let showPagination;
+  const showNavigation = data ? data.length > 3 : false;
+  const showPagination = data ? data.length > 3 : false;
 
   useEffect(() => {
     if (data) {
       setPrevData(data);
-
-      switch (true) {
-        case (window.innerWidth < 768 && data.length >= 2):
-          showNavigation = true;
-          showPagination = true;
-          break;
-        case (window.innerWidth < 768 && data.length < 2):
-          showNavigation = false;
-          showPagination = false;
-          break;
-        case (window.innerWidth >= 768 && window.innerWidth < 1280 && data.length >= 3):
-          showNavigation = true;
-          showPagination = true;
-          break;
-        case (window.innerWidth >= 768 && window.innerWidth < 1280 && data.length < 3):
-          showNavigation = false;
-          showPagination = false;
-          break;
-        case (window.innerWidth >= 1280 && data.length > 3):
-          showNavigation = true;
-          showPagination = true;
-          break;
-        case (window.innerWidth >= 1280 && data.length < 3):
-          showNavigation = false;
-          showPagination = false;
-          break;
-      }
 
       const timeoutId = setTimeout(() => {
         setIsLoaing(false)

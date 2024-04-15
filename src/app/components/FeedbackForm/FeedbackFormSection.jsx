@@ -29,7 +29,7 @@ export default function FeedbackFormSection({ lng }) {
           xl:w-full"
         >
           <div
-            className="absolute left-[-16px] rigth-0 bg-form w-[320px] h-[211px] custom-bg-shadow
+            className="absolute left-[-16px] rigth-0 bg-form w-[320px] h-[211px]
             sm:w-[420px] sm:h-[277px]
             md:w-[511px] md:h-[416px] md:left-0
             xl:w-[740px] xl:h-[490px] 
