@@ -29,8 +29,8 @@ const Policies = ({ data, lng }) => {
     const endOffset = itemOffset + itemsPerPage;
 
     useEffect(() => {
-        setItemsPerPage(window.innerWidth <= 769 ? 10 : 9);
-        setMarginPagesDisplayed(window.innerWidth <= 769 ? 0 : 1);
+        setItemsPerPage(window.innerWidth < 1280 ? 10 : 9);
+        setMarginPagesDisplayed(window.innerWidth < 1280 ? 0 : 1);
     }, [])
 
     useEffect(() => {
