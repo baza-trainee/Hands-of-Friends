@@ -10,6 +10,7 @@ const Action = forwardRef(({
   rel,
   target,
   textColor,
+  reload = false,
   ...props
 },
   ref
@@ -18,6 +19,14 @@ const Action = forwardRef(({
   const additionalProps = href
     ? { href, rel, target }
     : { onClick, ...props };
+
+  if (reload && href) {
+    additionalProps.onClick = (e) => {
+      e.preventDefault();
+      window.location.href = href;
+    };
+  }
+
 
   return (
     <ActionComponent
