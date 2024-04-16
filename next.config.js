@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["hands-of-friends-backend.onrender.com"],
+    domains: ["backend.rd.org.ua"],
   },
   webpack: (config) => {
     config.module.rules.push({
