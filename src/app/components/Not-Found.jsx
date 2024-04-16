@@ -32,6 +32,7 @@ export default function NotFound({ lng }) {
         href="/"
         rel="noopener noreferrer"
         target="_self"
+        reload="true"
         className="inline-block p-4 text-xl text-white duration-300 border-2 rounded cursor-pointer lg:self-center bg-violet border-violet hover:bg-white hover:text-violet"
       >
         {t("button")}
