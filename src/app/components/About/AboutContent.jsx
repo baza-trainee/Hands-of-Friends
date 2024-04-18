@@ -27,7 +27,7 @@ function AboutContent({ activeTab }) {
         ),
         values: aboutData[0]?.values.replace(
           /<ul/g,
-          `<ul class="list-disc pl-5"`
+          `<ul class="list-disc pl-5 text-xl"`
         ),
       };
       setFormattedData(formatted);
